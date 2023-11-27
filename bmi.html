@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function to calculate BMI
+function calculateBMI(weight, height) {
+    // Convert height from centimeters to meters
+    height = height / 100;
+
+    // Calculate BMI using the formula
+    var bmi = weight / (height * height);
+
+    return bmi;
+}
+
+// Example usage
+var weight = 70; // in kilograms
+var height = 175; // in centimeters
+
+// Calculate BMI
+var bmiResult = calculateBMI(weight, height);
+
+// Display the result
+console.log("Weight: " + weight + " kg");
+console.log("Height: " + height + " cm");
+console.log("BMI: " + bmiResult.toFixed(2)); // Display BMI rounded to two decimal places
+
+    </script>
+</body>
+</html>
