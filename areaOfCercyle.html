@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function to calculate the area of a circle
+function calculateCircleArea(radius) {
+    // Ensure the radius is non-negative
+    if (radius < 0) {
+        return "Radius should be non-negative.";
+    }
+
+    // Calculate the area using the formula A = πr²
+    var area = 3.144*(radius*radius);
+
+    return area;
+}
+
+// Example usage
+var radius = 5;
+
+// Calculate the area of the circle
+var areaResult = calculateCircleArea(radius);
+
+// Display the result
+console.log("Radius: " + radius);
+console.log("Area of the circle: " + areaResult.toFixed(2)); // Display area rounded to two decimal places
+
+
+    
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Video Player</title>
+</head>
+<body>
+
+<video width="500" height="300" controls autoplay onended="restartVideo()">
+    <!-- Placeholder image shown before the video starts -->
+    <img src="banner-image.jpg" alt="Banner Image" style="width:100%; height:100%; object-fit: cover; display: block;">
+    
+    <!-- Video source -->
+    <source src="your-video-file.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<script>
+    function restartVideo() {
+        // Get the video element
+        var video = document.querySelector('video');
+
+        // Set the current time to 0 to restart the video
+        video.currentTime = 0;
+
+        // Play the video again
+        video.play();
+    }
+</script>
+
+</body>
+</html>
